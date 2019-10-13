@@ -5,7 +5,6 @@ for ($i = 1; $i < 300; $i++) {
   $sum = array_sum(factors($i));
   for ($ii = $i+1;$ii<300;$ii++){
     if($sum == $ii && $i == array_sum(factors($ii))) {
-      echo "a";
       array_push($friends,$i,$ii);
       break;
     }
